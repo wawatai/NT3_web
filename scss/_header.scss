@@ -44,7 +44,7 @@ header {
 
             &.alLogin {
 
-                li {
+                li:not(.platform) {
                     cursor: pointer;
 
                     &:hover,&:active,&.active {

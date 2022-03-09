@@ -655,16 +655,16 @@ html body header .top .user.display {
   display: -ms-flexbox;
   display: flex;
 }
-html body header .top .user.alLogin li {
+html body header .top .user.alLogin li:not(.platform) {
   cursor: pointer;
 }
-html body header .top .user.alLogin li:hover, html body header .top .user.alLogin li:active, html body header .top .user.alLogin li.active {
+html body header .top .user.alLogin li:not(.platform):hover, html body header .top .user.alLogin li:not(.platform):active, html body header .top .user.alLogin li:not(.platform).active {
   background: #5d4614;
 }
-html body header .top .user.alLogin li:nth-of-type(1), html body header .top .user.alLogin li:nth-of-type(2) {
+html body header .top .user.alLogin li:not(.platform):nth-of-type(1), html body header .top .user.alLogin li:not(.platform):nth-of-type(2) {
   cursor: default;
 }
-html body header .top .user.alLogin li:nth-of-type(1):hover, html body header .top .user.alLogin li:nth-of-type(1):active, html body header .top .user.alLogin li:nth-of-type(1).active, html body header .top .user.alLogin li:nth-of-type(2):hover, html body header .top .user.alLogin li:nth-of-type(2):active, html body header .top .user.alLogin li:nth-of-type(2).active {
+html body header .top .user.alLogin li:not(.platform):nth-of-type(1):hover, html body header .top .user.alLogin li:not(.platform):nth-of-type(1):active, html body header .top .user.alLogin li:not(.platform):nth-of-type(1).active, html body header .top .user.alLogin li:not(.platform):nth-of-type(2):hover, html body header .top .user.alLogin li:not(.platform):nth-of-type(2):active, html body header .top .user.alLogin li:not(.platform):nth-of-type(2).active {
   background: none;
 }
 html body header .top .user li:not(.platform) {
@@ -813,8 +813,8 @@ html body header .top .user li:not(.platform).moneyTotal .transferInfo {
   width: 290px;
   height: auto;
   top: 40px;
-  background: #666666;
-  border: solid 1px #737373;
+  background: #ecdabc;
+  border: solid 1px #bb9645;
   position: absolute;
   left: 0;
   z-index: 5;
@@ -824,13 +824,13 @@ html body header .top .user li:not(.platform).moneyTotal .transferInfo.display {
   display: block;
 }
 html body header .top .user li:not(.platform).moneyTotal .transferInfo li {
-  border-bottom: solid 1px #737373;
+  border-bottom: solid 1px #bb9645;
   padding: 11px 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 html body header .top .user li:not(.platform).moneyTotal .transferInfo li div {
-  color: #ffffff;
+  color: #333333;
   width: 100%;
   height: 100%;
   font-weight: bold;
@@ -844,6 +844,9 @@ html body header .top .user li:not(.platform).moneyTotal .transferInfo li div {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+}
+html body header .top .user li:not(.platform).moneyTotal .transferInfo li div .money {
+  color: #bd0b0b;
 }
 html body header .top .user li:not(.platform).moneyTotal .transferInfo.display {
   display: block;

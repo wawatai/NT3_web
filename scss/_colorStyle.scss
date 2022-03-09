@@ -154,8 +154,8 @@ $header_LV_2: #008599;
     }
 }
 @mixin headerMoneyList {
-    background: #666666;
-    border: solid 1px #737373;
+    background: #ecdabc;
+    border: solid 1px #bb9645;
     position: absolute;
     left: 0;
     z-index: 5;
@@ -166,12 +166,12 @@ $header_LV_2: #008599;
     }
 
     li {
-        border-bottom: solid 1px #737373;
+        border-bottom: solid 1px #bb9645;
         padding: 11px 16px;
         box-sizing: border-box;
         
         div {
-            color: #ffffff;
+            color: #333333;
             width: 100%;
             height: 100%;
             font-weight: bold;
@@ -179,6 +179,10 @@ $header_LV_2: #008599;
             align-items: center;
             justify-content: space-between;
             position: relative;
+
+            .money {
+                color: #bd0b0b;
+            }
         }
     }
 }
