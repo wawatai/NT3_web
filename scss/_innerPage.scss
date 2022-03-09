@@ -1493,7 +1493,7 @@
                         display: flex;
                         align-items: center;
                         letter-spacing: 1px;
-                        color: $link;
+                        color: $title_3;
                         cursor: pointer;
 
                         .arrow {
@@ -1891,7 +1891,15 @@
                             }
 
                             &:hover,&:active,&.active {
-                                background: $mainBG_2;
+                                @include navHover;
+
+                                &::before {
+                                    display: none;
+                                }
+
+                                .title {
+                                    color: $title_2;
+                                }
                             }
 
                             input {
