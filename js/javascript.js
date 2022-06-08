@@ -312,17 +312,17 @@ $(function(){
 })
 
 //eventList+eventDetail 切換
-$(function(){
-    $('.eventBox .btnBox button').click(function(){
-        $('.eventList').removeClass('display');
-        $('.eventDetail').addClass('display');
-    })
+// $(function(){
+//     $('.eventBox .btnBox button').click(function(){
+//         $('.eventList').removeClass('display');
+//         $('.eventDetail').addClass('display');
+//     })
 
-    $('.eventDetail .back').click(function(){
-        $('.eventList').addClass('display');
-        $('.eventDetail').removeClass('display');
-    })
-})
+//     $('.eventDetail .back').click(function(){
+//         $('.eventList').addClass('display');
+//         $('.eventDetail').removeClass('display');
+//     })
+// })
 
 //vipWrap切換
 $(function(){

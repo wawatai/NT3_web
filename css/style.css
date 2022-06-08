@@ -489,36 +489,19 @@ header .logo {
 }
 
 .eventBox .imgBox {
-  width: 792px;
-  height: 192px;
+  width: 100%;
+  height: 250px;
 }
 .eventBox .imgBox img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.eventDetail .imgBox {
-  width: 100%;
-  height: 267px;
-}
-.eventDetail .imgBox img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.checkEvent .imgBox {
-  width: 100%;
-  height: 400px;
-}
 .checkEvent .imgBox img {
   width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .registerWrap .left img {
@@ -1882,7 +1865,7 @@ html body .filter .jumpWindow.listWindow .content table tr td p.sp {
 }
 html body .filter .jumpWindow.checkEvent {
   display: none;
-  width: 840px;
+  width: 1000px;
 }
 html body .filter .jumpWindow.checkEvent.display {
   display: block;
@@ -1892,17 +1875,19 @@ html body .filter .jumpWindow.checkEvent .content {
   height: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 28px 47px;
+  padding: 28px 22px 0;
 }
 html body .filter .jumpWindow.checkEvent .content .imgBox {
+  width: 100%;
+  height: 500px;
   overflow-x: auto;
 }
 html body .filter .jumpWindow.checkEvent .content p {
   font-size: 16px;
+  font-weight: bold;
   letter-spacing: 1px;
   color: #333333;
   margin-top: 10px;
-  font-weight: bold;
   line-height: 20px;
 }
 html body .filter .jumpWindow.checkEvent .btnBox {
@@ -2744,40 +2729,38 @@ html body .eventWrap .eventBody .side ul li span {
   color: #333333;
 }
 html body .eventWrap .eventBody .eventList {
-  display: none;
-  width: 1028px;
-}
-html body .eventWrap .eventBody .eventList.display {
-  display: block;
+  width: 1024px;
 }
 html body .eventWrap .eventBody .eventList .eventBox {
   background: #ffffff;
   -webkit-box-shadow: 0 5px 10px -5px #00000066;
           box-shadow: 0 5px 10px -5px #00000066;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
 }
 html body .eventWrap .eventBody .eventList .eventBox:last-child {
   margin: 0;
 }
 html body .eventWrap .eventBody .eventList .eventBox ul {
-  width: 252px;
+  width: 100%;
+  height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px 27px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 20px;
 }
 html body .eventWrap .eventBody .eventList .eventBox ul .title {
-  font-size: 29px;
+  width: 50%;
+  font-size: 24px;
   font-weight: bold;
   letter-spacing: 3px;
   overflow: hidden;
@@ -2786,15 +2769,11 @@ html body .eventWrap .eventBody .eventList .eventBox ul .title {
   color: #000000;
 }
 html body .eventWrap .eventBody .eventList .eventBox ul .btnBox {
-  width: 100%;
+  width: auto;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-html body .eventWrap .eventBody .eventList .eventBox ul .btnBox.twin {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 html body .eventWrap .eventBody .eventList .eventBox ul .btnBox.twin button:last-child {
   display: block;
@@ -2825,83 +2804,11 @@ html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:last-chil
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+  margin-left: 10px;
 }
 html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:last-child:hover, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:last-child:active, html body .eventWrap .eventBody .eventList .eventBox ul .btnBox button:last-child.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#9ddbec), color-stop(50%, #0282cc), to(#82aeeb));
   background: linear-gradient(to top, #9ddbec 0%, #0282cc 50%, #82aeeb 100%);
-}
-html body .eventWrap .eventBody .eventDetail {
-  display: none;
-  width: 1028px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 5px 10px -5px #00000066;
-          box-shadow: 0px 5px 10px -5px #00000066;
-}
-html body .eventWrap .eventBody .eventDetail.display {
-  display: block;
-}
-html body .eventWrap .eventBody .eventDetail .title {
-  padding: 22px 40px 18px;
-}
-html body .eventWrap .eventBody .eventDetail .title p {
-  font-size: 34px;
-  font-weight: bold;
-  color: #000000;
-}
-html body .eventWrap .eventBody .eventDetail .title button {
-  width: 135px;
-  height: 36px;
-  margin-top: 18px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #ffffff), to(#f4f4f4));
-  background: linear-gradient(to bottom, #ffffff 40%, #f4f4f4 100%);
-  border: solid 1px #cccccc;
-  border-radius: 3px;
-  color: #c69c6d;
-  font-size: 18px;
-  font-weight: bold;
-}
-html body .eventWrap .eventBody .eventDetail .title button:hover, html body .eventWrap .eventBody .eventDetail .title button:active, html body .eventWrap .eventBody .eventDetail .title button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #ffffff), to(#f4f4f4));
-  background: linear-gradient(to top, #ffffff 40%, #f4f4f4 100%);
-}
-html body .eventWrap .eventBody .eventDetail .title button i {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  margin: 0 10px -2px 0;
-}
-html body .eventWrap .eventBody .eventDetail .info {
-  padding: 25px 40px;
-}
-html body .eventWrap .eventBody .eventDetail .info .infoTitle {
-  font-size: 26px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #996c33;
-}
-html body .eventWrap .eventBody .eventDetail .info ul {
-  list-style: disc;
-  margin: 10px 0;
-}
-html body .eventWrap .eventBody .eventDetail .info ul.rule {
-  margin-top: 30px;
-}
-html body .eventWrap .eventBody .eventDetail .info ul.rule li {
-  font-weight: bold;
-}
-html body .eventWrap .eventBody .eventDetail .info ul li {
-  font-size: 16px;
-  color: #333333;
-  line-height: 20px;
-  margin-bottom: 5px;
-}
-html body .eventWrap .eventBody .eventDetail .info ul li.remind {
-  color: #e11515;
-}
-html body .eventWrap .eventBody .eventDetail .detailFooter {
-  width: 100%;
-  height: 130px;
-  padding-bottom: 60px;
 }
 html body .innerPage {
   background: #f4f4f4;
