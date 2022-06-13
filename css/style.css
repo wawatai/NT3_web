@@ -2266,11 +2266,6 @@ html body .gameWrap .content {
   margin-bottom: 48px;
   padding-top: 70px;
 }
-html body .gameWrap .content.slotPage {
-  width: 1400px;
-  height: auto;
-  margin: 0 auto;
-}
 html body .gameWrap .content .center {
   width: 1400px;
   height: auto;
@@ -2348,6 +2343,7 @@ html body .gameWrap .content .btnBox .innBox ul li p {
   font-size: 14px;
   color: #333333;
   padding-top: 5px;
+  font-weight: bold;
 }
 html body .gameWrap .slotCenter {
   width: 1400px;
@@ -2474,10 +2470,6 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox {
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms {
   margin-bottom: 50px;
-  display: none;
-}
-html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms.display {
-  display: block;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName {
   width: 100%;
@@ -2486,9 +2478,9 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfNa
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2499,42 +2491,9 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfNa
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName.active .all {
   display: none;
 }
-html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back {
-  background: -webkit-gradient(linear, left bottom, left top, from(#fae0af), color-stop(50%, #d7b676), to(#f8fbc0));
-  background: linear-gradient(to top, #fae0af 0%, #d7b676 50%, #f8fbc0 100%);
-  border: solid 1px #cca172;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-radius: 3px;
-  width: 137px;
-  height: 40px;
-  font-size: 18px;
-}
-html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all.active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back:hover, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back:active, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#f1d7b7), color-stop(50%, #cca172), to(#f1c999));
-  background: linear-gradient(to top, #f1d7b7 0%, #cca172 50%, #f1c999 100%);
-}
-html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .all i, html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back i {
-  display: inline-block;
-  width: 8px;
-  height: 15px;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  margin-left: 20px;
-}
-html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back {
-  display: none;
-}
-html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .pfName .back i {
-  margin: 0 20px 0 0;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
-}
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList {
   width: 100%;
-  height: 200px;
+  height: auto;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -2544,9 +2503,6 @@ html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .game
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList.active {
-  height: auto;
 }
 html body .gameWrap .slotCenter .slotBody .gameBox .platformBox .platforms .gameList li {
   width: 250px;
@@ -2759,7 +2715,7 @@ html body .eventWrap .eventBody .eventList .eventBox ul {
   padding: 0 20px;
 }
 html body .eventWrap .eventBody .eventList .eventBox ul .title {
-  width: 50%;
+  width: 72%;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 3px;
